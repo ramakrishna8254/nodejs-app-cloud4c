@@ -5,7 +5,7 @@ node
     }
     stage('Build'){
         nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
-        sh "npm install --unsafe-perm node-sass"
+        sh "npm install"
     }
     }
     stage('ExecuteSonarQubeReport'){
