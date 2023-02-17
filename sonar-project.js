@@ -1,11 +1,11 @@
 const sonarqubeScanner = require('sonarqube-scanner');
 
 sonarqubeScanner({
-  serverUrl: 'http://13.212.29.241:9000/',
+  serverUrl: 'http://ec2-43-204-148-142.ap-south-1.compute.amazonaws.com:9000/',
        options : {
 	    'sonar.projectDescription': 'This is a Node JS application',
-	    'sonar.projectName': 'Node JS Application - Sample',
-	    'sonar.projectKey':'NodeJsMithunTechnologies',
+	    'sonar.projectName': 'nodejs-cloud4c-app',
+	    'sonar.projectKey':'NodeJscloud4c',
 	    'sonar.login': 'squ_8c652b224389958c55462fd028d64ea787003c02',
 	    //'sonar.login': 'admin',
 	    //'sonar.password': 'admin',
