@@ -12,7 +12,7 @@ sonarqubeScanner({
 	    'sonar.language':'js',
             'sonar.sourceEncoding':'UTF-8',
             'sonar.sources': '.',
-	    'sonar.tests': 'specs',
-            'sonar.inclusions' : 'src/**'
+	    //'sonar.tests': 'specs',
+            //'sonar.inclusions' : 'src/**'
        },
 }, () => {});
