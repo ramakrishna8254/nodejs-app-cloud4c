@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "This Project explains all Node JS examples",
   "main": "app.js",
-  "publishconfig": {
+  "publishConfig": {
     "regisrty": "http://ec2-35-154-157-252.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
-  }
+  },
   "scripts": {
     "server": "http-server -c-1 -p 9999",
     "start1": "nodemon app.js",
