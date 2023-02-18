@@ -20,7 +20,7 @@ node
 	    sh "npm publish"
     }
     stage('RunNodeJSApp'){
-	sh "chmod 775 /var/lib/jenkins/workspace/nodejs-app/node_modules/"
+	sh "chmod u+x /var/lib/jenkins/workspace/nodejs-app/node_modules/*"
         sh "chmod u+x ./scripts/runApp.sh"
         sh "./scripts/runApp.sh"
     }
