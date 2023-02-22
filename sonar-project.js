@@ -16,7 +16,7 @@ sonarqubeScanner({
 	    //'sonar.javascript.lcov.reportPaths': 'coverage/lcov.info',
 	    //'sonar.exclusions': '**/node_modules/**,/coverage/lcov-report/*.test/*.js',
 	    //'sonar.javascript.lcov.reportPaths': './coverage/lcov.info',
-	    'sonar.tests': 'index.js',
+	    'sonar.tests': 'app.js',
             'sonar.inclusions': '/coverage/lcov-report/*.test/*.js',
        },
 }, () => {});
