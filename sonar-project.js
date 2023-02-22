@@ -12,11 +12,11 @@ sonarqubeScanner({
 	    'sonar.language':'js',
             'sonar.sourceEncoding':'UTF-8',
             'sonar.sources': '.',
-	    //'sonar-scanner -Dsonar.javascript.lcov.reportPaths': './coverage/lcov.info',  
+	    'sonar-scanner -Dsonar.javascript.lcov.reportPaths': './coverage/lcov.info',  
 	    //'sonar.javascript.lcov.reportPaths': 'coverage/lcov.info',
 	    //'sonar.exclusions': '**/node_modules/**,/coverage/lcov-report/*.test/*.js',
 	    //'sonar.javascript.lcov.reportPaths': './coverage/lcov.info',
-	    'sonar.tests': 'app.js',
+	    //'sonar.tests': 'app.js',
             //'sonar.inclusions': '/coverage/lcov-report/*.test/*.js',
        },
 }, () => {});
