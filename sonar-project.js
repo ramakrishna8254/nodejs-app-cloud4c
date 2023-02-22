@@ -13,7 +13,7 @@ sonarqubeScanner({
             'sonar.sourceEncoding':'UTF-8',
             'sonar.sources': '.',
 	    //'sonar.exclusions' '**/*.spec.ts',
-	    'sonar.tests': '__tests__',
+	    'sonar.tests': 'tests',
 	    //'sonar.test.inclusions': '**/*.spec.ts',
             'sonar.javascript.lcov.reportPaths': 'coverage/lcov.info',
 	    //'sonar-scanner -Dsonar.javascript.lcov.reportPaths': './coverage/lcov.info',  
