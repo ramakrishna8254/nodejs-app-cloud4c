@@ -11,7 +11,7 @@ sonarqubeScanner({
             'sonar.projectVersion':'1.0',
 	    'sonar.language':'js',
             'sonar.sourceEncoding':'UTF-8',
-            'sonar.sources': '.',
+            'sonar.sources': '/var/lib/jenkins/workspace/nodejs-app/node_modules/sonarqube-scanner/src',
 	    'sonar-scanner -Dsonar.javascript.lcov.reportPaths': './coverage/lcov.info',  
 	    //'sonar.javascript.lcov.reportPaths': 'coverage/lcov.info',
 	    //'sonar.exclusions': '**/node_modules/**,/coverage/lcov-report/*.test/*.js',
