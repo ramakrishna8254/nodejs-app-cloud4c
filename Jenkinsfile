@@ -21,7 +21,7 @@ node
     }
     stage('RunNodeJsApp')
 {
-sh "npm run app.js &"
+sh "nohup npm start &"
 }
 
 }
