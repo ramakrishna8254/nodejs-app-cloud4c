@@ -21,6 +21,7 @@ node
     }
     stage('RunNodeJsApp')
 {
+sh "sudo killall -9 node"
 sh "sudo nohup npm start &"
 }
 
