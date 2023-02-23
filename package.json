@@ -13,7 +13,6 @@
     "sonar": "node sonar-project.js"
   },
   "dependencies": {
-    "cfenv": "^1.1.0",
     "express": "^4.16.4"
   },
   "devDependencies": {
