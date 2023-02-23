@@ -12,9 +12,6 @@
     "start": "node app.js",
     "sonar": "node sonar-project.js"
   },
-  "dependencies": {
-    "express": "^4.16.4"
-  },
   "devDependencies": {
     "nodemon": "^1.18.9",
     "sonarqube-scanner": "^2.7.0"
