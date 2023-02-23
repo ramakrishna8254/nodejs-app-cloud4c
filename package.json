@@ -13,7 +13,7 @@
     "sonar":"sonar-scanner",
     "coverage": "./node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
     "coverage-lcov": "./node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
-    "lint": "./node_modules/.bin/eslint ."
+    "lint": "./node_modules/.bin/eslint .",
     "server": "http-server -c-1 -p 9999",
     "start1": "nodemon app.js",
     "start": "node app.js",
