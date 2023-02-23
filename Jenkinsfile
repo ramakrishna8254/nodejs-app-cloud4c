@@ -14,6 +14,15 @@ node
     stage('Test'){
         nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
         sh "npm test"
+	 step([$class: 'JUnitResultArchiver', testResults: 'tests/test-report.xml'])
+      step([
+        $class: 'CloverPublisher',
+        cloverReportDir: 'tests',
+        cloverReportFileName: 'coverage-report.xml',
+        healthyTarget: [methodCoverage: 67, conditionalCoverage: 75, statementCoverage: 67],
+        unhealthyTarget: [methodCoverage: 10, conditionalCoverage: 15, statementCoverage: 10],
+        failingTarget: [methodCoverage: 5, conditionalCoverage: 10, statementCoverage: 5]
+      ])
     }
     }	
     stage('ExecuteSonarQubeReport'){
