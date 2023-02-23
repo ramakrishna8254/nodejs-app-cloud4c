@@ -10,7 +10,7 @@
     "server": "http-server -c-1 -p 9999",
     "start1": "nodemon app.js",
     "start": "node app.js",
-    "test": "mocha -R spec src/**/*.spec.js"
+    "test": "mocha -R spec src/**/*.spec.js",
      "sonar": "node sonar-project.js"
   },
   "dependencies": {
