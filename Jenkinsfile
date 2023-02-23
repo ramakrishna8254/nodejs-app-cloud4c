@@ -13,7 +13,7 @@ node
     }
     stage('Test'){
         nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
-        sh "npm test"
+        sh "npm run test"
     }
     }	
     stage('ExecuteSonarQubeReport'){
