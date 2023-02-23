@@ -14,6 +14,7 @@ node
     stage('ExecuteSonarQubeReport'){
         nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
         sh "npm run sonar"
+	sh "npm test jacoco:report sonar:sonar"	
     }
     }
     stage('UploadArtifactintoNexus'){
