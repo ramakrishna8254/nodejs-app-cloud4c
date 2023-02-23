@@ -9,16 +9,12 @@ node
     stage('Build'){
         nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
         sh "npm install"
-    }
-    }
-    stage('Test'){
-        nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
-        sh "npm run test"
-    }
-    }	
-    stage('ExecuteSonarQubeReport'){
-        nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
-        sh "npm run sonar"
+		withSonarQubeEnv(sonar){
+		sh "npm install --save-dev mocha chai"
+		sh "npm run test"
+		sh "npm run coverage-lcov"
+		sh "npm install sonar-scanner"
+		sh "npm run sonar"}
     }
     }
     stage('UploadArtifactintoNexus'){
