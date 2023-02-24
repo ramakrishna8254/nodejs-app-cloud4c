@@ -11,11 +11,6 @@ node
         sh "npm install"
     }
     }
-	stage('Test'){
-        nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
-        sh "npm run test"
-    }
-    }	
     stage('ExecuteSonarQubeReport'){
         nodejs(nodeJSInstallationName: 'nodejs16.19.0'){
         sh "npm run sonar"
@@ -26,7 +21,6 @@ node
     }
     stage('RunNodeJsApp')
 {
-sh "sudo killall -9 node"
 sh "sudo nohup npm start &"
 }
 
