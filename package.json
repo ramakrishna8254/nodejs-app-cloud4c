@@ -4,7 +4,7 @@
   "description": "This Project explains all Node JS examples",
   "main": "app.js",
   "publishConfig": {
-    "regisrty": "http://ec2-13-232-134-89.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
+    "regisrty": "http://ec2-13-233-150-144.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
   },
   "scripts": {
     "server": "http-server -c-1 -p 9999",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://ec2-13-232-134-89.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
+    "url": "http://ec2-13-233-150-144.ap-south-1.compute.amazonaws.com:8081/repository/nodejs-cloud4c/"
   },
   "keywords": [
     "node",
