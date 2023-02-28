@@ -17,6 +17,6 @@ node
     }
      }
      stage('RunNodeJSApp'){
-        sh "sudo nohup npm start &"
+        sh "nohup npm start &"
     }
 }
