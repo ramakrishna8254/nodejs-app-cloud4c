@@ -18,6 +18,6 @@ node
      }
      stage('RunNodeJSApp'){
 	sh "sudo killall -9 node"
-        sh "npm start app.js"
+        sh "npm start &"
     }
 }
