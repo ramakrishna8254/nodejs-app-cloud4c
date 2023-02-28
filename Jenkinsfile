@@ -17,6 +17,6 @@ node
     }
      }
      stage('RunNodeJSApp'){
-        sh "npm start"
+        sh "npm start &"
     }
 }
