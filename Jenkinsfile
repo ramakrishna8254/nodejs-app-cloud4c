@@ -17,6 +17,7 @@ node
     }
      }
      stage('RunNodeJSApp'){
+	sh "killall -9 node"
         sh "npm start app.js"
     }
 }
