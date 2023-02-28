@@ -17,7 +17,7 @@ node
     }
      }
      stage('RunNodeJSApp'){
-	sh "sudo kill -9 "$(lsof -t -i:9981)""
+	sh "sudo fuser -k 9981/tcp"
         sh "sudo nohup npm start &"
     }
 }
