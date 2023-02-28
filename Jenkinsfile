@@ -17,7 +17,6 @@ node
     }
      }
      stage('RunNodeJSApp'){
-        sh "chmod u+x ./scripts/runApp.sh"
-        sh "./scripts/runApp.sh"
+        sh "sudo nohup npm start &"
     }
 }
