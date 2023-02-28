@@ -18,6 +18,6 @@ node
      }
      stage('RunNodeJSApp'){
 	sh "sudo fuser -k 9981/tcp"
-        sh "sudo npm start &"
+        sh "sudo nohup npm start &"
     }
 }
