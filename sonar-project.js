@@ -1,7 +1,7 @@
 const sonarqubeScanner = require('sonarqube-scanner');
 
 sonarqubeScanner({
-  serverUrl: 'http://ec2-15-207-114-82.ap-south-1.compute.amazonaws.com:9000/',
+  serverUrl: 'http://ec2-13-233-251-89.ap-south-1.compute.amazonaws.com:9000/',
        options : {
 	    'sonar.projectDescription': 'This is a Node JS application',
 	    'sonar.projectName': 'nodejs-cloud4c-app',
